@@ -1,0 +1,14 @@
+#imagesUploadForm {
+    margin-left: 3%;
+    width: 94%;
+}
+
+.deleteImage {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -20px;
+}
+
+#images {
+    list-style-type: none;
+}

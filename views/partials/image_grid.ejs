@@ -1,0 +1,30 @@
+<script src="/js/image_grid.js"></script>
+<ul class="thumbnails">
+    <%
+        for(var i=0; i < images.length; i++) {
+    %>
+        <li class="span4">
+            <div class="thumbnail" name="<%=images[i].imageId%>">
+                <a class="thumbnail_image" href="<%=images[i].big%>"><img src="<%=images[i].small%>"/></a>
+                <h3 class="title"><%=images[i].title%></h3>
+                <p class="description"><%=images[i].description%></p>
+                <p>
+                    <button class="btn edit_image">
+                        <i class="icon-edit"></i>
+                        Edit
+                    </button>
+                    <a href="<%=images[i].big%>" target='_blank' class="btn download_image">
+                        <i class="icon-download"></i>
+                        Download
+                    </a>
+                    <button class="btn delete_image">
+		        <i class="icon-trash"></i>
+                        Delete
+                    </button>
+                </p>
+            </div>
+        </li>	
+    <%
+        };
+    %>
+</ul>

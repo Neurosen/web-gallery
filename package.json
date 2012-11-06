@@ -1,0 +1,23 @@
+{
+  "name": "web-gallery",
+  "preferGlobal": "true",
+  "version": "1.0.0",
+  "author": "Eroshin Nikita <eroshin.n@ya.ru>",
+  "description": "Just a simple web gallery with basic functions",
+  "main": "./app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neurosen/web-gallery"
+  },
+  "dependencies" : {
+    "express"   :  "2.x",
+    "imagemagick" :  "0.x",
+    "node-uuid" :  "*",
+    "ejs"    :  "0.7.x",
+    "mongodb" :  "1.x",
+  }, 
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}

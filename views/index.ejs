@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+        <link rel="stylesheet" type="text/css" href="/css/common.css">
+        <script src="/js/jquery-1.7.2.js" type="text/javascript"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/js/index.script.js"></script>
+        <script src="/js/bootbox.min.js"></script>
+    </head>
+    <body>
+        <div id="menu">
+            <%- partial('partials/main_menu') %>
+	</div>
+        
+        <div id="content">
+            <%- partial('partials/image_grid') %>
+	</div>
+
+        <div class="modal hide" id="modal_dialog">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <img id="image"/>
+                <label>Image title</label> 
+                <input type="text" id="imageTitle"/> 
+                <label>Description</label> 
+                <textarea id="imageDescription"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button id="modal_save" data-dismiss="modal" class="btn btn-warning">
+                    Save changes
+                </button> 
+                <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+            </div>
+	</div>
+    </body>
+</html>
+
